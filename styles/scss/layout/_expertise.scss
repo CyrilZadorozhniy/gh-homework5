@@ -7,9 +7,10 @@
 .kinds-of-expertises {
   @include display-flex;
   @include flex-wrap(wrap);
-  margin-top: 50px;
+  margin-top: 40px;
   li {
     max-width: 33.33%;
+    padding: 35px;
     text-align: center;
     h3 {
       font-size: 14px;
@@ -23,6 +24,11 @@
     }
   }
 }
+@for $i from 1 through 2 {
+  .expertise-border-#{$i} {
+    border-right: $expertiseBorder;
+  }
+}
 @for $i from 1 through $expertiseNumber {
   .expertise-icon#{$i}::before {
     content: "";
@@ -33,5 +39,25 @@
     height: 50px;
     margin: 0 auto;
     margin-bottom: 20px;
+
   }
+}
+$i: 4;
+@while $i < ($expertiseNumber +1) {
+  $j: 1;
+  @while $j > 0 {
+    .expertise-border-#{$i} {
+      border-top: $expertiseBorder;
+      border-right: $expertiseBorder;
+    }
+    .expertise-border-#{$i + 1} {
+      border-top: $expertiseBorder;
+    }
+    .expertise-border-#{$i + 2} {
+      border-top: $expertiseBorder;
+      border-left: $expertiseBorder;
+    }
+    $j: $j - 1;
+  }
+  $i: $i + 3;
 }

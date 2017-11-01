@@ -1,0 +1,30 @@
+
+.meet-our-amazing-team {
+  background-image: url("../../img/meet-our-amazing-team-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  &:before {
+    content: "";
+    background-color: $bColor;
+    position: absolute;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  .container {
+    padding: 70px 0;
+    position: relative;
+  }
+  .overline-header {
+    h2 {
+      color: #ffffff;
+    }
+    p {
+      color: #f9f9f9;
+    }
+  }
+}
