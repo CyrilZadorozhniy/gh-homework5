@@ -1,0 +1,37 @@
+.expertise {
+  padding: 60px 0;
+  .container {
+
+  }
+}
+.kinds-of-expertises {
+  @include display-flex;
+  @include flex-wrap(wrap);
+  margin-top: 50px;
+  li {
+    max-width: 33.33%;
+    text-align: center;
+    h3 {
+      font-size: 14px;
+      font-weight: bold;
+      color: #413d4b;
+    }
+    p {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #333333;
+    }
+  }
+}
+@for $i from 1 through $expertiseNumber {
+  .expertise-icon#{$i}::before {
+    content: "";
+    display: block;
+    background-image: url("../../img/expertise#{$i}.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}

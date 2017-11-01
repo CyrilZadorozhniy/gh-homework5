@@ -1,0 +1,36 @@
+.our-story {
+  padding: 70px 0;
+  .container {
+    @include display-flex;
+    @include align-items(center);
+
+  }
+  .img-template {
+    overflow: hidden;
+    max-width: 380px;
+    max-height: 230px;
+    img {
+      width: 100%;
+    }
+  }
+}
+.our-story-content {
+  @include flex(1);
+  padding-left: 25px;
+  h2 {
+    text-transform: uppercase;
+    font-family: $hFontFamily;
+    font-size: 22px;
+    font-weight: bold;
+    color: #413d4b;
+  }
+  p {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #2a214d;
+  }
+  button {
+    margin-top: 30px;
+  }
+}

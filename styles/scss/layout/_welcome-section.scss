@@ -1,0 +1,47 @@
+.welcome-section {
+  background-image: url("../../img/welcome-section-bg.jpg");
+  background-size:cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  &:before {
+    content: "";
+    background-color: $bColor;
+    position: absolute;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  .container {
+    position: relative;
+}
+  .welcome-section-content {
+    margin: 0 auto;
+    max-width: 700px;
+
+    h2 {
+      margin-top: 160px;
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      color: #fff;
+    }
+    hr {
+      margin-top: 20px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #fff;
+      line-height: 25px;
+    }
+    button {
+      margin-top: 40px;
+      &:hover {
+        background-color: $blue;
+        color: $bColor;
+      }
+    }
+  }
+}

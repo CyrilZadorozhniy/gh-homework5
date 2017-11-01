@@ -1,0 +1,34 @@
+.watch-our-story {
+  height: 100vh;
+  text-align: center;
+  background-image: url("../../img/watch-our-story-bg.jpg");
+  background-size:cover;
+  background-position: center;
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  &:before {
+    content: "";
+    background-color: $bColor;
+    position: absolute;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  p {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+    &:before {
+      content: "";
+      background-image: url("../../img/play-button.png");
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+  }
+}
