@@ -319,6 +319,23 @@ button:hover {
   padding: 35px;
   text-align: center;
 }
+.kinds-of-expertises li:nth-child(1) {
+  border-right: 1px solid #c6c4c9;
+}
+.kinds-of-expertises li:nth-child(2) {
+  border-right: 1px solid #c6c4c9;
+}
+.kinds-of-expertises li:nth-child(3n+4) {
+  border-top: 1px solid #c6c4c9;
+  border-right: 1px solid #c6c4c9;
+}
+.kinds-of-expertises li:nth-child(3n+5) {
+  border-top: 1px solid #c6c4c9;
+  border-right: 1px solid #c6c4c9;
+}
+.kinds-of-expertises li:nth-child(3n+6) {
+  border-top: 1px solid #c6c4c9;
+}
 .kinds-of-expertises li h3 {
   font-size: 14px;
   font-weight: bold;
@@ -330,15 +347,7 @@ button:hover {
   color: #333333;
 }
 
-.expertise-border-1 {
-  border-right: 1px solid #c6c4c9;
-}
-
-.expertise-border-2 {
-  border-right: 1px solid #c6c4c9;
-}
-
-.expertise-icon1::before {
+.expertise-icon1:before {
   content: "";
   display: block;
   background-image: url("../../img/expertise1.png");
@@ -349,7 +358,7 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.expertise-icon2::before {
+.expertise-icon2:before {
   content: "";
   display: block;
   background-image: url("../../img/expertise2.png");
@@ -360,7 +369,7 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.expertise-icon3::before {
+.expertise-icon3:before {
   content: "";
   display: block;
   background-image: url("../../img/expertise3.png");
@@ -371,7 +380,7 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.expertise-icon4::before {
+.expertise-icon4:before {
   content: "";
   display: block;
   background-image: url("../../img/expertise4.png");
@@ -382,7 +391,7 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.expertise-icon5::before {
+.expertise-icon5:before {
   content: "";
   display: block;
   background-image: url("../../img/expertise5.png");
@@ -393,7 +402,7 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.expertise-icon6::before {
+.expertise-icon6:before {
   content: "";
   display: block;
   background-image: url("../../img/expertise6.png");
@@ -402,20 +411,6 @@ button:hover {
   height: 50px;
   margin: 0 auto;
   margin-bottom: 20px;
-}
-
-.expertise-border-4 {
-  border-top: 1px solid #c6c4c9;
-  border-right: 1px solid #c6c4c9;
-}
-
-.expertise-border-5 {
-  border-top: 1px solid #c6c4c9;
-  border-right: 1px solid #c6c4c9;
-}
-
-.expertise-border-6 {
-  border-top: 1px solid #c6c4c9;
 }
 
 .meet-our-amazing-team {
