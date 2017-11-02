@@ -52,10 +52,10 @@ $i: 4;
     }
     .expertise-border-#{$i + 1} {
       border-top: $expertiseBorder;
+      border-right: $expertiseBorder;
     }
     .expertise-border-#{$i + 2} {
       border-top: $expertiseBorder;
-      border-left: $expertiseBorder;
     }
     $j: $j - 1;
   }

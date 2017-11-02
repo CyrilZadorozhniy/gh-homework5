@@ -1,0 +1,30 @@
+.works {
+  width: 100%;
+  @include display-flex;
+  @include flex-wrap(wrap);
+}
+.work {
+  overflow: hidden;
+  width: 16.666666667%;
+  a {
+    width: 100%;
+    display: block;
+    height: 100%;
+    img {
+      width: 100%;
+      vertical-align: middle;
+      transition: 0.5s;
+      &:hover {
+        filter: brightness(0) invert(0);
+      }
+    }
+  };
+}
+//@for $i from1 through $worksNumber {
+//  .work-#{$i} {
+//    background-image: url("../../img/work#{$i}.jpg");
+//    background-size: cover;
+//    background-position: center;
+//    background-repeat: no-repeat ;
+//  }
+//}

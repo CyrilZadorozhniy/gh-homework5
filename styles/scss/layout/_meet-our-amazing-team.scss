@@ -3,9 +3,9 @@
   background-image: url("../../img/meet-our-amazing-team-bg.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   text-align: center;
   position: relative;
-  height: 100vh;
   &:before {
     content: "";
     background-color: $bColor;
@@ -18,6 +18,14 @@
   .container {
     padding: 70px 0;
     position: relative;
+    & > p {
+      font-size: 14px;
+      margin-top: 70px;
+      color: #f3f3f3;
+    }
+    button {
+      margin-top: 30px;
+    }
   }
   .overline-header {
     h2 {
@@ -25,6 +33,37 @@
     }
     p {
       color: #f9f9f9;
+    }
+  }
+}
+.team-list {
+  @include display-flex;
+  @include justify-content(space-between);
+}
+.member-team {
+  margin-top: 50px;
+  .img-template {
+    max-width: 222px;
+    max-height: 232px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+  .member-info {
+    max-width: 222px;
+    border: 1px solid #78768c;
+    border-top: none;
+    padding:20px 0 28px;
+    h3 {
+      font-size: 14px;
+      color: #ffffff;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 13px;
+      color: #78768c;
+      margin-top: 10px;
     }
   }
 }

@@ -24,8 +24,10 @@ button {
   padding: 10px 15px;
   color: $blue;
   cursor: pointer;
+  transition: 0.1s;
   &:hover {
     background-color: $blue;
     color: $bColor;
+    padding: 10px 20px;
   }
 }

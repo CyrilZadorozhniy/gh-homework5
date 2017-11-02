@@ -84,10 +84,12 @@ button {
   padding: 10px 15px;
   color: #00e0d0;
   cursor: pointer;
+  transition: 0.1s;
 }
 button:hover {
   background-color: #00e0d0;
   color: #2f2b4f;
+  padding: 10px 20px;
 }
 
 .site-header {
@@ -117,6 +119,7 @@ button:hover {
   text-decoration: none;
   font-size: 13px;
   color: #fff;
+  transition: 0.3s;
 }
 .nav-header ul li a:hover {
   color: #00e0d0;
@@ -145,10 +148,35 @@ button:hover {
   border: 1px solid #c6c4c9;
 }
 
+.our-works-header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 75px 0;
+}
+.our-works-header h2 {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #413d4b;
+  font-family: "Playfair Display", serif;
+}
+.our-works-header a {
+  font-size: 14px;
+  color: #413d4b;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.our-works-header a:hover {
+  color: #2a214d;
+  font-size: 15px;
+}
+
 .welcome-section {
   background-image: url("../../img/welcome-section-bg.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   text-align: center;
   position: relative;
   height: 100vh;
@@ -238,6 +266,7 @@ button:hover {
   background-image: url("../../img/watch-our-story-bg.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
@@ -259,6 +288,10 @@ button:hover {
   text-transform: uppercase;
   font-size: 16px;
   color: #ffffff;
+  transition: 0.5s;
+}
+.watch-our-story p:hover {
+  filter: brightness(0) invert(0);
 }
 .watch-our-story p:before {
   content: "";
@@ -378,20 +411,20 @@ button:hover {
 
 .expertise-border-5 {
   border-top: 1px solid #c6c4c9;
+  border-right: 1px solid #c6c4c9;
 }
 
 .expertise-border-6 {
   border-top: 1px solid #c6c4c9;
-  border-left: 1px solid #c6c4c9;
 }
 
 .meet-our-amazing-team {
   background-image: url("../../img/meet-our-amazing-team-bg.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   text-align: center;
   position: relative;
-  height: 100vh;
 }
 .meet-our-amazing-team:before {
   content: "";
@@ -406,9 +439,136 @@ button:hover {
   padding: 70px 0;
   position: relative;
 }
+.meet-our-amazing-team .container > p {
+  font-size: 14px;
+  margin-top: 70px;
+  color: #f3f3f3;
+}
+.meet-our-amazing-team .container button {
+  margin-top: 30px;
+}
 .meet-our-amazing-team .overline-header h2 {
   color: #ffffff;
 }
 .meet-our-amazing-team .overline-header p {
   color: #f9f9f9;
+}
+
+.team-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.member-team {
+  margin-top: 50px;
+}
+.member-team .img-template {
+  max-width: 222px;
+  max-height: 232px;
+  overflow: hidden;
+}
+.member-team .img-template img {
+  width: 100%;
+}
+.member-team .member-info {
+  max-width: 222px;
+  border: 1px solid #78768c;
+  border-top: none;
+  padding: 20px 0 28px;
+}
+.member-team .member-info h3 {
+  font-size: 14px;
+  color: #ffffff;
+}
+.member-team .member-info p {
+  font-size: 14px;
+  font-weight: 13px;
+  color: #78768c;
+  margin-top: 10px;
+}
+
+.works {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.work {
+  overflow: hidden;
+  width: 16.666666667%;
+}
+.work a {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+.work a img {
+  width: 100%;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+.work a img:hover {
+  filter: brightness(0) invert(0);
+}
+
+.feedbacks {
+  height: 100vh;
+  background-image: url("../../img/feedbacks-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.feedbacks:before {
+  content: "";
+  background-color: #2f2b4f;
+  position: absolute;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.feedback {
+  position: relative;
+  color: #ffffff;
+  width: 740px;
+  line-height: 25px;
+}
+.feedback p {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+.feedback p:before {
+  content: "";
+  background-image: url("../../img/quotes.png");
+  width: 32px;
+  height: 26px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.feedback h2 {
+  font-size: 14px;
+  margin-top: 55px;
+  font-weight: bold;
+}
+.feedback span {
+  font-size: 13px;
+}
+
+.works-footer {
+  padding: 75px 0;
+  text-align: center;
 }
