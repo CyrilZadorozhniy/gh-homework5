@@ -701,16 +701,21 @@ button:hover {
   justify-content: space-between;
 }
 
-.social-network {
-  border: 1px solid;
+.social-network a {
+  border: 1px solid #fff;
   border-radius: 50%;
   width: 35px;
   height: 35px;
+  display: inline-block;
   text-align: center;
 }
 .social-network a .fa {
   color: #fff;
   padding: 9px 0;
+  transition: 0.2s;
+}
+.social-network a .fa:hover {
+  transform: scale(1.5);
 }
 
 .site-footer-bottom {
@@ -733,6 +738,12 @@ button:hover {
 .site-footer-bottom ul li a {
   text-decoration: none;
   color: #fff;
+}
+.site-footer-bottom ul li a:hover {
+  color: #00e0d0;
+}
+.site-footer-bottom ul li a:active {
+  color: #00e0d0;
 }
 
 .form-and-clients {
