@@ -59,6 +59,8 @@ body {
 }
 
 * {
+  outline: 0;
+  outline-offset: 0;
   box-sizing: border-box;
 }
 
@@ -565,4 +567,236 @@ button:hover {
 .works-footer {
   padding: 75px 0;
   text-align: center;
+}
+
+.site-footer {
+  color: #ffffff;
+  position: relative;
+  background-image: url("../../img/watch-our-story-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.site-footer:before {
+  content: "";
+  background-color: #2f2b4f;
+  position: absolute;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+.site-footer .container {
+  position: relative;
+  padding: 70px 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: start;
+  align-items: start;
+}
+.footer-content h2 {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.footer-description {
+  width: 285px;
+  font-size: 14px;
+}
+.footer-description img {
+  width: 130px;
+}
+.footer-description p {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.our-studio {
+  width: 300px;
+}
+.our-studio p {
+  font-size: 14px;
+  line-height: 25px;
+  position: relative;
+}
+.our-studio .location {
+  margin-top: 45px;
+}
+.our-studio .location:before {
+  content: "";
+  background-image: url("../../img/location.png");
+  width: 14px;
+  height: 19px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+.our-studio .phone-number {
+  margin-top: 28px;
+}
+.our-studio .phone-number:before {
+  content: "";
+  background-image: url("../../img/phone-number.png");
+  width: 17px;
+  height: 17px;
+  float: left;
+  margin-right: 10px;
+}
+
+.stay-in-touch {
+  font-size: 15px;
+}
+.stay-in-touch form {
+  margin-top: 45px;
+  display: -webkit-flex;
+  display: flex;
+}
+.stay-in-touch form input {
+  background: none;
+  padding: 0 15px;
+  color: #fff;
+  opacity: 0.7;
+  border: 2px solid #ffffff;
+}
+.stay-in-touch form input::placeholder {
+  text-align: center;
+  color: #fff;
+}
+.stay-in-touch form button {
+  border: none;
+  border-radius: 0;
+  background-image: url("../../img/footer-button.png");
+  width: 70px;
+  height: 45px;
+  opacity: 0.6;
+  transition: 0.6s;
+}
+.stay-in-touch form button:hover {
+  opacity: 0.9;
+}
+
+.social-networks {
+  margin-top: 30px;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.social-network {
+  border: 1px solid;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+.social-network a .fa {
+  color: #fff;
+  padding: 9px 0;
+}
+
+.site-footer-bottom {
+  margin-top: 70px;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.site-footer-bottom ul {
+  font-size: 14px;
+}
+.site-footer-bottom ul li {
+  float: left;
+  margin-right: 30px;
+}
+.site-footer-bottom ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.form-and-clients {
+  padding: 70px 0;
+}
+.form-and-clients h2 {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Playfair Display", serif;
+  color: #413d4b;
+}
+.form-and-clients .container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.form-and-clients .container .clients-wrap {
+  max-width: 380px;
+}
+
+.site-form {
+  max-width: 460px;
+}
+.site-form > * {
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.site-form input {
+  width: 100%;
+  padding: 12px 20px;
+}
+.site-form input:nth-of-type(1) {
+  margin-top: 40px;
+}
+.site-form textarea {
+  padding: 12px 20px;
+  height: 200px;
+  width: 100%;
+  resize: none;
+}
+.site-form button {
+  padding: 10px 35px;
+}
+.site-form button:hover {
+  padding: 10px 40px;
+}
+
+.clients {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  width: 100%;
+}
+.clients .client {
+  max-width: 40%;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.clients .client:nth-child(odd) {
+  margin-right: 20%;
+}
+.clients .client img {
+  width: 100%;
 }
